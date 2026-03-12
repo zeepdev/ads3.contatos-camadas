@@ -19,4 +19,10 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ExceptionValidationRegra extends CoreException {
     private String regra;
+
+    public ExceptionValidationRegra(String regra, String message, String titulo, String icone) {
+        super(message, titulo, icone);
+        this.regra = regra;
+    }
+    
 }

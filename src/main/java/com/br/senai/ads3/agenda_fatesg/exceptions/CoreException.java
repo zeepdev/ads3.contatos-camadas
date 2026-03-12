@@ -20,4 +20,10 @@ import lombok.Setter;
 public class CoreException extends Exception{
     private String titulo;
     private String icone;
+    
+    public CoreException(String message, String titulo, String icone){
+        super(message);
+        this.titulo = titulo;
+        this.icone = icone;
+    }
 }

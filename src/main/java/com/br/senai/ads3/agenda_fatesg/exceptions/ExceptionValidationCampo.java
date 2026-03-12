@@ -19,4 +19,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ExceptionValidationCampo extends CoreException {
     private String campo;
+
+    public ExceptionValidationCampo(String campo, String message, String titulo, String icone) {
+        super(message, titulo, icone);
+        this.campo = campo;
+    }
+    
+    
 }
